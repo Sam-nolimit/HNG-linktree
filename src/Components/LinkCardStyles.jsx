@@ -4,7 +4,7 @@ export const LinkCardStyle = styled.p`
   box-sizing: border-box;
 
   /* Auto layout */
-  border: 8px solid red;
+  /* border: 8px solid red; */
 
   display: flex;
   flex-direction: column;
@@ -23,6 +23,7 @@ export const LinkCardStyle = styled.p`
 
   border: 1px solid #eaecf0;
   border-radius: 8px;
+  font-weight: 600;
 
   /* Inside auto layout */
 
