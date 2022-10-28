@@ -5,7 +5,7 @@ export const LinkCardStyle = styled.p`
 
   /* Auto layout */
   /* border: 8px solid red; */
-
+ font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
