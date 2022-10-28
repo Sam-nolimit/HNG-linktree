@@ -2,22 +2,15 @@ import styled from "styled-components";
 
 export const Avatar = styled.div`
   #mainImg {
-    /* Auto layout */
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0px;
-
     width: 88px;
     height: 88px;
-
     background: url(.jpg);
     border-radius: 275px;
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -26,21 +19,14 @@ export const Avatar = styled.div`
 `;
 
 export const NameTitle = styled.div`
-  /* Text xl/Bold */
-
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   line-height: 30px;
-  /* identical to box height, or 150% */
-
   text-align: center;
-
-  /* Gray/900 */
-
-  color: #101828;
-
-  /* Inside auto layout */
+  color: black;
+  font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+ 
 `;
 
 export const ProfileSectionStyle = styled.div`
@@ -50,11 +36,10 @@ export const ProfileSectionStyle = styled.div`
   padding: 0px;
   gap: 24px;
   isolation: isolate;
-
+  font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   width: 100%;
   height: 142px;
 
-  /* Inside auto layout */
 `;
 
 export const ShareButton = styled.button`
@@ -65,7 +50,6 @@ export const ShareButton = styled.button`
   width: 40px;
   position: absolute;
   right: 20%;
-  /* left: 0; */
   top: 3rem;
   cursor: pointer;
 
@@ -73,3 +57,15 @@ export const ShareButton = styled.button`
     right: 10%;
   }
 `;
+
+export const SlackID = styled.div`
+font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  display: none;
+  color: black;
+  font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+ 
+`

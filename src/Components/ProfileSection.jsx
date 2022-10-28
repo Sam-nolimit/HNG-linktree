@@ -2,6 +2,7 @@ import avatar from "../Assets/Temitope_pic.jpeg";
 import {
   Avatar,
   NameTitle,
+  SlackID,
   ProfileSectionStyle,
   
 } from "./ProfileSectionStyle";
@@ -11,7 +12,8 @@ const ProfileSection = () => {
       <Avatar>
         <img src={avatar} id="mainImg" alt="Logo" />
       </Avatar>
-      <NameTitle>Temitope Adejolu</NameTitle>
+      <NameTitle> @TAdejolu</NameTitle>
+      <SlackID> U048B97TPD1 </SlackID>
     </ProfileSectionStyle>
     
   );
