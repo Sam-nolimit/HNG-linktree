@@ -6,7 +6,7 @@ function ContactMe() {
     <div className='contact container'>
       <div className='contact_container'>
         <h1>Contact Me</h1>
-        <p>Hey there, I would love to hear your thoughts.</p>
+        <p>Hi there, contact me to ask me about anything you have in mind.</p>
         <form>
           <div className='names'>
             <div className='firstName'>
@@ -41,10 +41,12 @@ function ContactMe() {
               <textarea
               type='text'
               id='message'
-              placeholder='Your Feedback...'>
+              placeholder='Send me a message and ill reply you as soon as possible'>
               </textarea>
             {/* /> */}
-            
+            <div className='checkbox'>
+              <label> You agree to providing your data to sam who may contact you.</label>
+            </div>
           </div>
           <div className='button'>
             <button id='btn__submit'>Send message</button>
