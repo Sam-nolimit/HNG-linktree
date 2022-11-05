@@ -1,44 +1,231 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 20px 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  text-align: center;
+  min-height: 100vh;
+  max-width: 100vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+header,
+main,
+footer {
+  max-width: 85vw;
+  margin: 0 auto;
 }
 
-a:link {
-  text-decoration: none;
+header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}
-
-a:link {
+header a {
+  display: block;
   color: #101828;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 1rem;
 }
-a:visited {
-  color: #101828;
+.profile {
+  margin-left: 6rem;
+  position: relative;
+  /* left:50px; */
 }
-a:hover {
-  color: #101828;
+
+#profile_img{
+  height: 88px;
+  border-radius: 100px;
 }
-a:active {
+
+
+
+main .buttons a {
+  display: block;
+  text-decoration: none;
   color: #101828;
+  background-color: #eaecf0;
+  padding: 1.5rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 90%;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+main .buttons a:hover {
+  background-color: #d0d5dd;
+}
+
+#slack,
+.option_icon {
+  display: none;
+}
+
+.share_icon {
+  margin-left: 3rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+/*----------------------Contact-----------------------------*/
+.contact.container {
+  height: auto;
+}
+
+.contact_container {
+  max-width: 50vw;
+  margin: 5rem auto 0;
+}
+
+.contact_container h1,
+.contact_container p {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.contact_container h1 {
+  color: #101828;
+  font-size: 2.2rem;
+}
+
+.contact_container p {
+  color: #475467;
+}
+
+form {
+  margin: 3rem 0;
+}
+
+.names {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.first_name,
+.last_name {
+  /* position: relative;
+  right: 20px; */
+  margin-left: 0;
+}
+
+#first_name,
+#last_name {
+  width: 20rem;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.4rem;
+  color: #344054;
+}
+
+input[type='text'],
+input[type='email'] {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid #667085;
+  margin-bottom: 1.25rem;
+}
+
+input:focus {
+  outline: none;
+  border: 1.5px solid #b2ddff;
+}
+
+#message {
+  padding-bottom: 8.25rem;
+}
+
+textarea{
+  width: 100%;
+}
+button {
+  background-color: #1570ef;
+  color: #ffff;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #1570efb8;
+}
+
+/* Footer */
+small {
+  color: #667085;
+}
+
+footer {
+  border-top: 1px solid #eaecf0;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*-----------------------MOBILE VERSION-----------------------    */
+@media (max-width: 767px) {
+  /*main  */
+  .profile {
+    margin-left: 2rem;
+  }
+
+  main .buttons a {
+    width: 95%;
+  }
+
+  /* contact */
+  .contact_container {
+    max-width: 95vw;
+    margin: 5rem auto 0;
+  }
+
+  .names {
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #first_name,
+  #last_name {
+    width: 100%;
+  }
+
+  /* footer */
+  footer,
+  .share_icon {
+    display: none;
+  }
+
+  .option_icon {
+    display: inline;
+  }
 }

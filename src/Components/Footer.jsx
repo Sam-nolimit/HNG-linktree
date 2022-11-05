@@ -1,17 +1,18 @@
-import { FooterStyle, FooterWrapper, FooterText } from "./FooterStyle";
-import I4G from "../Assets/I4G.png";
-import zuri from "../Assets/zuri.svg";
+import I4G from '../Assets/I4G.png';
+import zuri from '../Assets/Vector.png';
 
-const Footer = () => {
+
+function Footer() {
   return (
-    <FooterWrapper>
-      <FooterStyle>
-        <img src={zuri} id="zuri" alt="zuri" />
-        <FooterText>HNG Internship 9 Frontend Task</FooterText>
-        <img src={I4G} id="I4G" alt="I4G" />
-      </FooterStyle>
-    </FooterWrapper>
-  );
-};
+    <div>
+    
+      <footer>
+        <img src={zuri} alt='zuri logo' />
+        <small>HNG Internship 9 Frontend Task</small>
+        <img src={I4G} alt='I4G logo' />
+      </footer>
+    </div>
+  )
+}
 
 export default Footer;

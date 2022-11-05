@@ -1,43 +1,21 @@
-import React from "react";
-import { MainWrapper } from "./AppStyle";
-import Footer from "./Components/Footer";
-import LinkCard from "./Components/LinkCard";
-import ProfileSection from "./Components/ProfileSection";
-import SocialSection from "./Components/SocialSection";
-import shareIcon from "./Assets/share-06.svg";
-import dotIcon from "./Assets/dots-horizontal.svg";
-import { ShareButton } from "./Components/ProfileSectionStyle";
-import { useEffect, useState } from "react";
-function App() {
-  const [isMobile, setIsMobile] = useState(true);
-  const handleResize = () => {
-    if (window.innerWidth > 768) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  };
+import React from 'react';
+import './App.css';
+import {Route,Routes} from "react-router-dom";
+import Main from './Components/Main';
+import ContactMe from './Components/ContactMe.jsx';
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  });
+function App() {
   return (
-    <>
-      <MainWrapper>
-        <ShareButton>
-          {isMobile ? (
-            <img src={shareIcon} alt="icon" />
-          ) : (
-            <img src={dotIcon} alt="icon" />
-          )}
-        </ShareButton>
-        <ProfileSection />
-        <LinkCard />
-        <SocialSection />
-      </MainWrapper>
-      <Footer />
-    </>
+    <div>
+        <Routes>
+          <Route path="/HNG-linktree" element={<Main/>} />
+          <Route path="/contact" element={<ContactMe/>} />
+        </Routes>
+      </div>
+        
   );
 }
 
 export default App;
+
+
